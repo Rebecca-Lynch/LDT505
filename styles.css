@@ -1,0 +1,165 @@
+
+body{
+	width:100%;
+	display:inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:center;
+	overflow-x: hidden;
+}
+
+/* HEADER */
+#header{
+	display:inline-block;
+	background-image:url('images/header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center right;
+	height: 300px;
+	width:100%;
+}
+
+#header_text{
+	color: #FFFFFF;
+	background-color: rgba(0, 153, 185, 0.8);
+	padding: 5px;
+	max-width:700px;
+	width:100%;
+	text-align: center;
+	height:75%;
+}
+
+h1{
+	font-weight:normal;
+	font-size: 45px;
+
+}
+
+.subtitle{
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+
+
+
+/* Navigation */
+ul#navigation{
+	background-color: rgba(0, 153, 185);
+	width:100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navigation li{
+	width:24%;
+	display:inline-block;
+	color: #FFFFFF;
+	padding: 20px 0px;
+	font-size: 15px;
+}
+
+#navigation li:hover{
+	background-color: #00b4db;
+}
+
+#navigation .active{
+	background-color: #237387;
+}
+
+@media screen and (max-width: 600px) {
+  #navigation li {
+    width: 100%;
+	display:block;
+  }
+}
+
+
+
+/* BADGES BODY */
+
+h2{
+	font-weight: normal;
+	color: 595959;
+	font-size:35px;
+	margin-top: 50px;
+	margin-bottom: 3px;
+}
+
+div.subject{
+	display:none;
+}
+
+div.selected{
+	display:inline-block;
+}
+
+/* BADGES */
+
+.badge{
+	height: 315px;
+	width: 300px;
+	margin: 3px 0px;
+	display:inline-block;
+	padding:10px;
+	position:relative;
+}
+
+p.badge_title{
+	font-weight:bold;
+}
+
+
+p.how_earn{
+	font-size:12px;
+	color: #0099ba;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+p.how_earn:visited{
+	color: #014756;
+}
+
+p.how_earn:hover{
+	color: #00cffc;
+}
+
+/* BADGE EXPLANATION */
+.earn_explanation{
+	position:absolute;
+	top:0px;
+	width:260px;
+	height:315px;
+	padding:0px 20px;
+	background-color: rgba(0,0,0, 0.8);
+	color:#FFFFFF;
+	display:none;
+}
+
+.exit_explanation{
+	text-align:right;
+	cursor:pointer;
+}
+
+.earn_text{
+	margin-top:50px;
+}
+
+.earn_explanation a{
+	color:#FFFFFF;
+}
+
+.earn_explanation a:hover{
+	color: #00cffc;
+}
+
+
+
+/* AWARDED BADGES */
+.awarded{
+	position:absolute;
+	right:85px;
+	top:5px
+	width:50px;
+	height:50px;
+	background-image:url('images/awarded.png');
+}
