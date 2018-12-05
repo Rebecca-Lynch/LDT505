@@ -72,6 +72,32 @@ ul#navigation{
   }
 }
 
+/* Q&A */
+div.QA{
+	width:100%;
+	background-color: #d5e0e7;
+	margin-bottom:10px;
+	text-align:left;
+	display:inline-block;
+}
+
+div.QA .question{
+	font-weight:bold;
+	padding: 5px 10px;
+}
+
+div.QA .question::before {
+  content: "+ ";
+}
+
+div.QA .answer{
+	text-align:left;
+	display:none;
+	padding: 5px 30px;
+}
+
+
+
 
 
 /* BADGES BODY */
