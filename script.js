@@ -30,8 +30,8 @@ $( document ).ready(function() {
 		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info2.txt";
 	}
 
-	
 	if (textFile !== "undefined"){
+		alert("GOOD");
 		$.get(textFile, function(data){
 			var userInfo = data.split(',');
 			var i = 2;
