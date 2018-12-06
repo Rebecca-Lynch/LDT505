@@ -24,11 +24,7 @@ $( document ).ready(function() {
 	var userInfo = new Array;
 	
 	
-	if (userNumber == 1){
-		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info.txt";
-	} else if (userNumber == 2){
-		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info2.txt";
-	}
+
 	
 	
     $.get(textFile, function(data){
