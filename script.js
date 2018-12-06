@@ -22,9 +22,11 @@ $( document ).ready(function() {
 	var userNumber = url.substr(url.length - 1);
 	
 	var userInfo = new Array;
-	var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info.txt";
 	
-	if (userNumber == 2){
+	
+	if (userNumber == 1){
+		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info.txt";
+	} else if (userNumber == 2){
 		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info2.txt";
 	}
 	
