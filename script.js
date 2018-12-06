@@ -29,23 +29,23 @@ $( document ).ready(function() {
 	} else if (userNumber == 2){
 		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info2.txt";
 	}
-	
-    $.get(textFile, function(data){
-		var userInfo = data.split(',');
-		var i = 2;
-		
-		$(".badge").each(function(){
 
-			if(userInfo[i] === 'TRUE'){
-				$(this).prepend("<div class='awarded'></div>")
-			}
-			i = i + 1;
+	
+	if (textFile !== "undefined"){
+		$.get(textFile, function(data){
+			var userInfo = data.split(',');
+			var i = 2;
+			
+			$(".badge").each(function(){
+				if(userInfo[i] === 'TRUE'){
+					$(this).prepend("<div class='awarded'></div>")
+				}
+				i = i + 1;
+			});
+			
+			$("h1").append("<span> for " + userInfo[0] + " " + userInfo[1] + "</span>");
 		});
-		
-	
-		
-
-	});
+	}
 
 		
 	
