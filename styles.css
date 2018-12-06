@@ -43,7 +43,7 @@ h1{
 
 /* Navigation */
 ul#navigation{
-	background-color: rgba(0, 153, 185);
+	background-color: #0099ba;
 	width:100%;
 	margin: 0px;
 	padding: 0px;
@@ -79,7 +79,7 @@ div#about{
 	
 div.QA{
 	width:100%;
-	background-color: rgba(0, 153, 185);
+	background-color: #0099ba;
 	margin-bottom:10px;
 	text-align:left;
 	display:inline-block;
