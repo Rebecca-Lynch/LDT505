@@ -30,7 +30,7 @@ body{
 
 h1{
 	font-weight:normal;
-	font-size: 45px;
+	font-size: 35px;
 
 }
 
@@ -73,12 +73,18 @@ ul#navigation{
 }
 
 /* Q&A */
+div#about{
+	margin-bottom:50px;
+}
+	
 div.QA{
 	width:100%;
-	background-color: #d5e0e7;
+	background-color: rgba(0, 153, 185);
 	margin-bottom:10px;
 	text-align:left;
 	display:inline-block;
+	color:#FFFFFF;
+	cursor:pointer;
 }
 
 div.QA .question{
@@ -93,11 +99,11 @@ div.QA .question::before {
 div.QA .answer{
 	text-align:left;
 	display:none;
-	padding: 5px 30px;
+	padding: 15px 30px;
+	margin-bottom:0px;
+	color: #343434;
+	background-color:#FFFFFF;
 }
-
-
-
 
 
 /* BADGES BODY */
@@ -135,7 +141,7 @@ p.badge_title{
 
 
 p.how_earn{
-	font-size:12px;
+	font-size:14px;
 	color: #0099ba;
 	text-decoration:none;
 	cursor:pointer;
@@ -184,8 +190,8 @@ p.how_earn:hover{
 .awarded{
 	position:absolute;
 	right:85px;
-	top:5px
-	width:50px;
-	height:50px;
+	top:130px;
+	width:150px;
+	height:40px;
 	background-image:url('images/awarded.png');
 }
