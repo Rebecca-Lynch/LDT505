@@ -42,7 +42,7 @@ $( document ).ready(function() {
 			i = i + 1;
 		});
 		
-		$("h1").append("<span> for " + userInfo[0] + " " + userInfo[1] + "</span>");
+	
 		
 
 	});
