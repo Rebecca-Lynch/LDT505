@@ -18,30 +18,55 @@ $( document ).ready(function() {
 		} 
 		
 	// GET PRACTICE INFO (This will be replaced by an SQL Database in the final iteration) //
+	var url = window.location.href;
+	var userNumber = url.substr(url.length - 1);
+	
 	var userInfo = new Array;
-    $.get('https://rebecca-lynch.github.io/LDT505/practice_info.text', function(data){
+	var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info.txt";
+	
+	if (userNumber == 2){
+		var textFile = "https://rebecca-lynch.github.io/LDT505/practice_info2.txt";
+	}
+	
+	
+    $.get(textFile, function(data){
 		var userInfo = data.split(',');
-		alert("HELLO");
+		var i = 2;
+		
+		$(".badge").each(function(){
+
+			if(userInfo[i] === 'TRUE'){
+				$(this).prepend("<div class='awarded'></div>")
+			}
+			i = i + 1;
+		});
+		
+		$("h1").append("<span> for " + userInfo[0] + " " + userInfo[1] + "</span>");
+		
+
 	});
 
 		
 	
 	// Show Q&A Answer //
-	$("div.QA .question").click(function(){
-		$(this).siblings(".answer").slideToggle();
+	$("div.QA").click(function(){
+		if($(this).children(".answer").css('display') == 'none'){ 
+			$(".answer").slideUp();
+			$(this).children(".answer").slideDown();
+		} else{
+			$(this).children(".answer").slideUp();
+		}
 	});
 	
 	// Show Selected Group of Badges //
 	$("#navigation li").click(function(){
 		var which_nav_button = $(this).attr('id');
-		
 		$("div.subject").hide();
-		$('div#' + which_nav_button).show();
+		$('div#' + which_nav_button).fadeIn(300);
 	});
 	
 	
 	// Click on How to Earn Button //
-	
 	$(".how_earn").click(function(){
 		$(".earn_explanation").hide();
 		$(this).siblings(".earn_explanation").fadeIn();
