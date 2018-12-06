@@ -31,10 +31,11 @@ $( document ).ready(function() {
 	} else {
 		var textFile = "NONE";
 	}
+	
 
 	
-	if (textFile !== "NONE"){
-		
+	if (textFile != "NONE"){
+		alert(textFile);
 		$.get(textFile, function(data){
 			var userInfo = data.split(',');
 			var i = 2;
